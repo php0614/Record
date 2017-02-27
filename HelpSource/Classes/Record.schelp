@@ -1,0 +1,60 @@
+TITLE:: Record
+summary:: Recording
+categories:: ..
+related:: ..
+
+DESCRIPTION::
+Simple Recording class with silent cut mode. Record an audio bus to a file. 24bit wav.
+
+~audioBus1 = Bus.audio(s, 1);
+
+~rec1 = Record("/Works_S/Sounds/test1.wav", ~audioBus1, true);
+
+~rec1.monitorOnOff_(true);
+
+~rec1.start;
+
+~rec1.stop;
+
+//you can just push cmd peroid instead of running .stop
+
+CLASSMETHODS::
+
+METHOD:: new
+
+ARGUMENT:: path
+full file path (String)
+
+ARGUMENT:: bus
+audio bus ( ex. Bus.audio(s, 1) )
+
+ARGUMENT:: silentCutMode
+
+false by default. If true, the recording file is going to be closed automatically when there's silent.
+
+useful for making a wave file that has almost exact length to the source.
+
+but when using this mode, some sound needs to be played in the audio bus within 0.1 second from the start of recording, unless the file is going to be closed immediately.
+
+returns:: (describe returnvalue here)
+
+
+INSTANCEMETHODS::
+
+METHOD:: stop
+
+stop and close file
+
+returns:: (describe returnvalue here)
+
+METHOD:: start
+
+start recording
+
+returns:: (describe returnvalue here)
+
+EXAMPLES::
+
+code::
+(some example code)
+::
