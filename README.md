@@ -2,7 +2,7 @@
 
 --------------------------------------------------------------------------------------------------------------------
 
-Simple Recording class for Supercollider with silent cut mode. Record an audio bus to a file. 24bit wav.
+Simple Recording class for Supercollider with silent cut mode. Record an audio bus to a file. 24bit wav. by Philip Liu
 
 --------------------------------------------------------------------------------------------------------------------
 
